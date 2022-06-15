@@ -66,11 +66,15 @@
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-0 lg:right-0">
-                        <img src="dist/img/FettbobaJB-removebg-preview.png" alt="Alfin Reynaldi" class="bobafeet max-w-full mx-auto"/>
-                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 translate-y-24 md:scale-125">
-                            <svg width="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <img src="dist/img/FettbobaJB-removebg-preview.png" alt="Alfin Reynaldi" class="hidden lg:block bobafeet max-w-full mx-auto"/>
+                        <img style="width: 200px;" src="dist/img/FettbobaJB-removebg-preview.png" alt="Alfin Reynaldi" class="lg:hidden bobafeet max-w-full mx-auto"/>
+                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 lg:translate-y-24 translate-y-0 md:scale-125">
+                            <svg class="lg:block hidden" width="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#14b8a6" d="M41.5,-39C50,-22.5,50.4,-5.4,46.1,9.3C41.7,24,32.6,36.3,19.7,43.6C6.7,51,-10,53.2,-25.8,47.8C-41.7,42.5,-56.6,29.4,-58.8,14.8C-61,0.3,-50.5,-15.8,-38.5,-33.1C-26.6,-50.4,-13.3,-69,1.6,-70.3C16.5,-71.6,33,-55.5,41.5,-39Z" transform="translate(100 100)" />
-                              </svg>
+                            </svg>
+                            <svg class="lg:hidden" width="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#14b8a6" d="M41.5,-39C50,-22.5,50.4,-5.4,46.1,9.3C41.7,24,32.6,36.3,19.7,43.6C6.7,51,-10,53.2,-25.8,47.8C-41.7,42.5,-56.6,29.4,-58.8,14.8C-61,0.3,-50.5,-15.8,-38.5,-33.1C-26.6,-50.4,-13.3,-69,1.6,-70.3C16.5,-71.6,33,-55.5,41.5,-39Z" transform="translate(100 100)" />
+                            </svg>
                         </span>
                     </div>
                 </div>
@@ -80,7 +84,7 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-        <section id="about" class="pt-36 pb-32">
+        <section id="about" class="lg:pt-24 pt-12 pb-32">
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -115,9 +119,9 @@
             <div class="container">
                 <div class="w-full px-4">
                     <div class="max-w-xl mx-auto text-center mb-16">
-                        <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-                        <h2 class="font-bold text-3xl text-dark mb-4">Project Terbaru</h2>
-                        <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti eveniet dolor fugiat labore sit nobis corporis quisquam aliquam molestiae.</p>
+                        <h4 class="font-semibold text-lg text-primary mb-2 lg:text-2xl">Portfolio</h4>
+                        <h2 class="font-bold text-3xl text-dark mb-4 sm:text-4xl lg:text-5xl">Project Terbaru</h2>
+                        <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti eveniet dolor fugiat labore sit nobis corporis quisquam aliquam molestiae.</p>
                     </div>
                 </div>
             
@@ -131,21 +135,21 @@
                     </div>
                     <div class="flex-col mb-12 p-4 md:w-1/2">
                         <div class="flex justify-center w-full">
-                            <img class="w-full rounded shadow-2xl" src="dist/img/portfolio/22.png" alt="Project 1">
+                            <img class="w-full rounded shadow-2xl" src="dist/img/portfolio/22.png" alt="Project 2">
                         </div>
                         <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Section 2 of This Web</h3>
                         <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa voluptatem doloremque!</p>
                     </div>
                     <div class="flex-col mb-12 p-4 md:w-1/2">
                         <div class="flex justify-center w-full">
-                            <img class="w-full rounded shadow-2xl" src="dist/img/portfolio/linkree.png" alt="Project 1">
+                            <img class="w-full rounded shadow-2xl" src="dist/img/portfolio/linkree.png" alt="Linktree">
                         </div>
                         <h3 class="font-semibold text-xl text-dark mt-5 mb-3">My Linktree</h3>
                         <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa voluptatem doloremque!</p>
                     </div>
                     <div class="flex-col mb-12 p-4 md:w-1/2">
                         <div class="flex justify-center w-full">
-                            <img class="w-full rounded shadow-2xl" src="dist/img/portfolio/web.png" alt="Project 1">
+                            <img class="w-full rounded shadow-2xl" src="dist/img/portfolio/web.png" alt="Second Web">
                         </div>
                         <h3 class="font-semibold text-xl text-dark mt-5 mb-3">My Second Web</h3>
                         <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa voluptatem doloremque!</p>
@@ -156,6 +160,36 @@
 
     <!-- Portfolio Section End -->
 
+    <!-- Clients Section Start -->
+    <section id="clients" class="pt-36 pb-32 bg-slate-700">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2 lg:text-2xl">Clients</h4>
+                    <h2 class="font-bold text-3xl text-white mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fuga error beatae?</p>
+                </div>
+            </div>
+
+            <div class="w-full px-4">
+                <div class="flex flex-wrap items-center justify-center">
+                    <a href="#" target="_blank" class="max-w-[150px] mx-4 py-4 grayscale opacity-60 transition duration-300 ease-in-out hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="dist/img/clients/google2.png" alt="Google Logo">
+                    </a>
+                    <a href="#" target="_blank" class="max-w-[150px] mx-4 py-4 grayscale opacity-60 transition duration-300 ease-in-out hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="dist/img/clients/shopee.png" alt="Shopee Logo">
+                    </a>
+                    <a href="#" target="_blank" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 ease-in-out hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="dist/img/clients/adidas.png" alt="Adidas Logo">
+                    </a>
+                    <a href="#" target="_blank" class="max-w-[150px] mx-4 py-4 grayscale opacity-60 transition duration-300 ease-in-out hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="dist/img/clients/spotify.png" alt="Spotify Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section End -->
     <script src="dist/js/script.js"></script>
 </body>
 </html>
