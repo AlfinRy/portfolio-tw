@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "[my-framework] build --output public",
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
